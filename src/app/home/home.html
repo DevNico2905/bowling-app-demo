@@ -1,0 +1,20 @@
+<div class="relative w-screen h-screen overflow-hidden">
+  <!-- Fondo / imagen principal -->
+  <img
+    src="assets/icons/logo.png"
+    class="w-full h-full object-cover"
+    alt="Fondo"
+  />
+
+  <!-- Capa con el mismo tamaño y recorte que el fondo (object-cover 16:9):
+       los porcentajes del botón quedan anclados a la imagen en cualquier resolución -->
+  <div class="cover-box">
+    <!-- Botón Jugar: zona libre bajo el título, a la izquierda del letrero azul -->
+    <img
+    routerLink="/game"
+    src="assets/icons/btn-jugar.png"
+    alt="Jugar"
+    class="btn-jugar cursor-pointer animate-idle"/>
+  </div>
+
+</div>

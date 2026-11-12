@@ -1,0 +1,39 @@
+.train-one-regular {
+  font-family: "Train One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@keyframes idle {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0) scale(1);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-18px) scale(1.05);
+  }
+}
+
+/* Replica el recorte de object-cover para una imagen 16:9 (1920x1080) */
+.cover-box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: max(100vw, 177.78vh);
+  height: max(100vh, 56.25vw);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.btn-jugar {
+  position: absolute;
+  left: 20%;
+  top: 55%;
+  width: 15%;
+  transform: translateX(-50%);
+  pointer-events: auto;
+}
+
+.animate-idle {
+  animation: idle 3.2s ease-in-out infinite;
+}
